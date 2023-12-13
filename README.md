@@ -19,7 +19,8 @@ The Q-learning algorithm is a model-free reinforcement learning algorithm. In th
 The reward is calculated as the difference between the scores of the two players and is used to update the Q-table using the following formula:
 
 ```python
-Q(s, a) += alpha * (reward + gamma * max(Q(s', a')) - Q(s, a))'''
+Q(s, a) += alpha * (reward + gamma * max(Q(s', a')) - Q(s, a))
+```
 
 where:
 
