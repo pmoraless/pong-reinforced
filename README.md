@@ -36,7 +36,7 @@ where:
 
 `discount_factor` is a parameter that determines the importance of future rewards in the model's decision-making process. It discounts the value of future rewards to make them less significant than immediate rewards.
 
-To learn more about the algorithm, check out a beginner's guide I created explaining the workflow of Reinforcement Learning ![here](https://docs.google.com/document/d/1BPWzRBq3j-pxcDQ8rm_Od16EOWAEmWp5cwGGYR77RYI/edit?usp=sharing).
+To learn more about the algorithm, check out a beginner's guide I created explaining the workflow of Reinforcement Learning [here](https://docs.google.com/document/d/1BPWzRBq3j-pxcDQ8rm_Od16EOWAEmWp5cwGGYR77RYI/edit?usp=sharing).
 
 ## Game Logic
 
