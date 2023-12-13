@@ -16,7 +16,7 @@ Pong is a two-player sports game that simulates table tennis. Players control pa
 
 ## Q-Learning Algorithm
 
-The Q-learning algorithm is a model-free reinforcement learning algorithm. In the context of this Pong game, the Q-table is initialized with random values and is updated every time the ball is hit. The state is represented by a tuple of five variables: ball x-coordinate, ball y-coordinate, paddle 1 y-coordinate, paddle 2 y-coordinate, and ball direction (dx and dy).
+The Q-learning algorithm is a reinforcement learning algorithm. In the context of this Pong game, the Q-table is initialized with random values and is updated every time the ball is hit. The state is represented by a tuple of five variables: ball x-coordinate, ball y-coordinate, paddle 1 y-coordinate, paddle 2 y-coordinate, and ball direction (dx and dy).
 
 The reward is calculated as the difference between the scores of the two players and is used to update the Q-table using the following formula:
 
