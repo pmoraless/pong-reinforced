@@ -19,16 +19,16 @@ The Q-learning algorithm is a model-free reinforcement learning algorithm. In th
 The reward is calculated as the difference between the scores of the two players and is used to update the Q-table using the following formula:
 
 ```python
-Q(s, a) += alpha * (reward + gamma * max(Q(s', a')) - Q(s, a))
+q_table[current_state][chosen_action] += learning_rate * (reward + discount_factor * max(q_table[new_state]) - q_table[current_state][chosen_action])
 ```
 
 where:
 
-'s' is the current state
-'a' is the action taken
-'s'' is the new state after taking the action
-'alpha' is the learning rate
-'gamma' is the discount factor
+`current_state` is the snapshot of the environment at a specific point in time during the execution of the Pong game. Holds all relevant information about the positions, velocities, and other relevant attributes of the game elements, such as paddles and the ball.
+`chosen_action` is the decision made by the reinforcement learning model from the set of available actions in the current state. Actions in the game include moving the paddle up, down, or taking no action.
+`new_state` is the result of the environment's response to the chosen action. It represents the updated configuration of the game elements after the agent has taken a specific action in the current state.
+`learning_rate` is a hyperparameter that determines the extent to which the Q-values are updated during the Q-table learning process. It controls the balance between retaining past knowledge of the states and integrating new information for the game elements.
+`discount_factor` is a parameter that determines the importance of future rewards in the model's decision-making process. It discounts the value of future rewards to make them less significant than immediate rewards.
 
 ## Game Logic
 
@@ -44,12 +44,12 @@ where:
 
 To run the game, make sure you have Python and Pygame installed. 
 
-'''pip3 install pygame'''
-'''pip3 install python3'''
+```pip3 install pygame```
+```pip3 install python3```
  
 Execute the provided Python script game.py in your desired terminal. 
 
-'''python3 game.py'''
+```python3 game.py```
 
 **Note** Setup was tested using a Unix-based system. As such, I do not guarantee it working on another based system. 
 
