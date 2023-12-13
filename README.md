@@ -9,6 +9,7 @@ This repository contains a simple implementation of the classic Pong game using 
 Pong is a two-player sports game that simulates table tennis. Players control paddles on either side of the screen, and they use the paddles to strike a ball back and forth. The goal is to score points by making the ball pass the opponent's paddle, or in this cae, past the player's line of bounds.
 
 ![Working Pong version](https://github.com/pmoraless/pong-reinforced/blob/29fa1631bae724e1b1ebee99d924c88e0eda0179/docs/pong.gif)
+
 *Working Pong version. Left paddle: randomized computer Right paddle: Q-table algorithm model*
 
 ## Q-Learning Algorithm
@@ -18,7 +19,7 @@ The Q-learning algorithm is a model-free reinforcement learning algorithm. In th
 The reward is calculated as the difference between the scores of the two players and is used to update the Q-table using the following formula:
 
 ```python
-Q(s, a) += alpha * (reward + gamma * max(Q(s', a')) - Q(s, a))
+Q(s, a) += alpha * (reward + gamma * max(Q(s', a')) - Q(s, a))'''
 
 where:
 
@@ -26,7 +27,7 @@ where:
 'a' is the action taken
 's'' is the new state after taking the action
 'alpha' is the learning rate
-'gamma' is the discount factor'''
+'gamma' is the discount factor
 
 ## Game Logic
 
