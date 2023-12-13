@@ -7,10 +7,12 @@ This repository contains a simple implementation of the classic Pong game using 
 ## Background
 
 Pong is a two-player sports game that simulates table tennis. Players control paddles on either side of the screen, and they use the paddles to strike a ball back and forth. The goal is to score points by making the ball pass the opponent's paddle, or in this cae, past the player's line of bounds.
-
-![Working Pong version](https://github.com/pmoraless/pong-reinforced/blob/29fa1631bae724e1b1ebee99d924c88e0eda0179/docs/pong.gif)
-
-*Working Pong version. Left paddle: randomized computer Right paddle: Q-table algorithm model*
+<p align="center">
+  <img src="https://github.com/pmoraless/pong-reinforced/blob/29fa1631bae724e1b1ebee99d924c88e0eda0179/docs/pong.gif"/>
+</p>
+<p>
+    <em>Working Pong version. Left paddle: randomized computer Right paddle: Q-table algorithm model, Dec 2023 </em>
+</p>
 
 ## Q-Learning Algorithm
 
